@@ -1,7 +1,7 @@
 {
   "name": "Agents-ToDo",
   "version": "1.0.0",
-  "description": "AI-native task management powered by a TODO.md file. Pick tasks, track progress, save WIP, and ship — all through Claude Code skills.",
+  "description": "AI-native task management powered by a TODO.md file. Pick tasks, track progress, save WIP, and ship — all through Agent Code skills.",
   "author": {
     "name": "ZimneJonas",
     "url": "https://github.com/ZimneJonas/"
@@ -10,7 +10,7 @@
   "license": "MIT",
   "keywords": [
     "task-management",
-    "master-plan",
+    "Agents-ToDo",
     "workflow",
     "productivity",
     "agent-skills"

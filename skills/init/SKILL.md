@@ -9,7 +9,7 @@ Scan the project and produce a concise `AGENTS.md` that tells agents what they n
 
 ## Triggers
 
-- `/master-plan:init` (or `/init`)
+- `/init`
 - "init project", "setup agents", "create agents.md"
 
 ## Workflow

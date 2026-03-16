@@ -5,13 +5,13 @@
     "url": "https://github.com/ZimneJonas/Agents-ToDo"
   },
   "metadata": {
-    "description": "AI-native task management for Claude Code. Track tasks in TODO.md — pick, save, review."
+    "description": "AI-native task management for Agent Code. Track tasks in TODO.md — pick, save, review."
   },
   "plugins": [
     {
-      "name": "master-plan",
+      "name": "Agents-ToDo",
       "source": "./",
-      "description": "Task lifecycle skills: /init, /next, /done, /task",
+      "description": "Task lifecycle skills: /init, /next, /submit, /task, /review",
       "version": "1.0.0"
     }
   ]
