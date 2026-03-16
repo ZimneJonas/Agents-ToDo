@@ -8,7 +8,9 @@ AI-native task management for Claude Code. Track tasks in a `TODO.md` file — p
 /plugin marketplace add ZimneJonas/Agents-ToDo
 /plugin install Agents-ToDo
 ```
-
+```
+/plugin update Agents-ToDo
+```
 ## Skills
 
 | Command | What it does |
