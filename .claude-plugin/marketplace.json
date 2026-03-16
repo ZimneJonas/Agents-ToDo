@@ -1,11 +1,11 @@
 {
-  "name": "master-plan",
+  "name": "Agents-ToDo",
   "owner": {
-    "name": "endlessblink",
-    "url": "https://github.com/endlessblink"
+    "name": "ZimneJonas",
+    "url": "https://github.com/ZimneJonas/Agents-ToDo"
   },
   "metadata": {
-    "description": "AI-native task management for Claude Code. Track tasks in TODO.md — pick, save, ship."
+    "description": "AI-native task management for Claude Code. Track tasks in TODO.md — pick, save, review."
   },
   "plugins": [
     {
