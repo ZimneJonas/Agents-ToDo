@@ -63,6 +63,10 @@ Description of the task...
 **Priorities**: `P0` (critical) · `P1` · `P2` (default) · `P3` (backlog)
 IDs are sequential across all types.
 
+## Credits
+
+Inspired by [endlessblink/master-plan](https://github.com/endlessblink/master-plan).
+
 ## License
 
 MIT

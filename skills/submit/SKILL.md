@@ -5,8 +5,6 @@ description: Mark tasks ready for review in TODO.md and run checks. Triggers on 
 
 # Submit for Review
 
-Mark a finished task as ready for review: run checks and update TODO.md.
-
 ## Triggers
 
 - `/submit`
@@ -16,41 +14,29 @@ Mark a finished task as ready for review: run checks and update TODO.md.
 
 ### Step 1: Determine What's Done
 
-Check TODO.md for IN PROGRESS tasks. Cross-reference with conversation context (or git diff) to determine which tasks are actually complete.
+Check TODO.md for IN PROGRESS tasks. Cross-reference with conversation context to confirm what's complete. Ask only if genuinely unclear.
 
-If multiple tasks appear finished based on context, mark all of them. Ask for confirmation if it's genuinely unclear.
+### Step 2: Run Checks
 
-### Step 2: Run Checks (if not already done this session)
+Check AGENTS.md for lint/build commands and run them. Skip if already run and passed this session.
 
-Check AGENTS.md to verfy aproach to changes.
-Verify with project's lint/format/build commands. If they haven't been run yet in this conversation, run them now. Fix any errors before proceeding.
+### Step 3: Update TODO.md
 
-Skip if checks were already run and passed.
+Mark completed tasks as `👀 Review` in all occurrences (roadmap table, section header).
 
-### Step 3: Mark Ready for Review in TODO.md
+### Step 4: Suggest a Commit Message
 
-Update all occurrences of the task (roadmap table, section header, bullet points):
-
-```markdown
-### TASK-XXX: Title (👀 Review)
-```
-
-### Step 4: Recommend a Commit Message
-
-Summarize the changes and suggest a commit message for the user to run. Use conventional commit format:
+Use only what the user actually changed. Conventional commit format, one line:
 
 ```
-fix: button not reloading
-refactor: helper auth logic
-style: align form inputs
+docs: add credits to README
+fix: login redirect bug
 ```
 
-### Step 5: Handoff
-
-Run `/next` to pick the next task. When ready to merg-review the branch, run `/review`.
+Only suggest the message — never run git commands.
+Don't include everything, just the abstract commit idea.
 
 ## Rules
 
-- Never skip checks if they haven't run this session
+- Only suggest a commit for what was actually done — don't invent scope
 - Mark all completed tasks
-- Never run git commands — only suggest the commit message
