@@ -1,6 +1,6 @@
 # Agents-ToDo
 
-AI-native task management for Agent Code. Track tasks in a `TODO.md` file — pick, save, and review — all through Agent Code skills.
+AI-native task management for Claude Code. Track tasks in a `TODO.md` file — pick, save, and review — all through Agent Code skills.
 
 ## Install
 
