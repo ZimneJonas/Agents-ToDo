@@ -13,26 +13,29 @@ AI-native task management for Agent Code. Track tasks in a `TODO.md` file — pi
 
 | Command | What it does |
 |---|---|
-| `/init` | Scans your project and generates `AGENTS.md` — an architecture guide for AI agents |
-| `/task` | Adds a new task to `TODO.md` with an auto-generated ID |
-| `/next` | Picks the next task to work on |
-| `/submit` | Marks a task ready for review and commits |
-| `/review` | Diffs current branch, code-reviews changes, and produces a test checklist |
+| `/init` | Scan project → generate `AGENTS.md` and `TODO.md` |
+| `/task` | Capture a task, bug, or idea into `TODO.md` |
+| `/next` | Pick the highest-priority task and start it |
+| `/submit` | Run checks, mark done, suggest commit |
+| `/review` | Branch diff → code review → test checklist |
+
 
 ## Workflow
 
-**1. Initialize** — run `/init` once. Agent scans your stack and writes `AGENTS.md` so agents know how to work in your codebase.
+**Setup** — run `/init` once. Scans your stack, writes `AGENTS.md` (architecture guide for agents), and creates `TODO.md`.
 
-**2. Add tasks** — describe what needs doing:
+**Brain-dump** — capture anything without losing focus on what you're doing:
 ```
 /task fix the login redirect bug
 /task add dark mode
 ```
-Agent infers the type and priority and appends it to `TODO.md`.
 
-**3. Pick a task** — run `/next`. Agent shows the highest-priority work and marks it `IN PROGRESS`.
+**Pick up work** — run `/next`. Scores tasks by priority and marks the chosen one `IN PROGRESS`.
 
-**4. Submit** — when done, run `/submit`. Agent runs checks, marks the task ready for review, and commits.
+**Wrap up** — run `/submit` when done. Runs checks, marks the task `👀 Review`, and suggests a commit message.
+
+**Before merging** — run `/review`. Diffs the branch against its target, reviews the code, and produces a test checklist. Marks all reviewed tasks `✅ Done`.
+
 
 ## TODO.md structure
 
@@ -53,7 +56,7 @@ Description of the task...
 
 ## Completed
 
-### ~~TASK-2~~: Dark mode (✅ DONE)
+### ~~TASK-2~~: Dark mode (✅ Done)
 ```
 
 **Types**: `TASK` · `BUG` · `FEATURE` · `INQUIRY`
