@@ -2,5 +2,4 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
-TODO.md
 docs/TODO.md
