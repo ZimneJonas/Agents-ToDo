@@ -1,6 +1,6 @@
 {
   "name": "Agents-ToDo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI-native task management powered by a TODO.md file. Pick tasks, track progress, save WIP, and ship — all through Agent Code skills.",
   "author": {
     "name": "ZimneJonas",

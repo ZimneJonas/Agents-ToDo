@@ -12,7 +12,7 @@
       "name": "Agents-ToDo",
       "source": "./",
       "description": "Task lifecycle skills: /init, /next, /submit, /task, /review",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }
